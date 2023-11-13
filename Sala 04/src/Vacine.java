@@ -9,10 +9,18 @@ public class Vacine {
 
     public Vacine(String name, LocalDate dataAplicacao, LocalDate validade, int lote, String nomeEmpresa) {
         this.name = name;
-        this.dataAplicacao = dataAplicacao;
-        this.validade = validade;
         this.lote = lote;
         this.nomeEmpresa = nomeEmpresa;
+        if(dataAplicacao.isAfter(LocalDate.now())){
+            this.dataAplicacao = dataAplicacao;
+        }else{
+            System.out.println("Data de aplicação inválida");
+        }
+        if (dataAplicacao.isBefore(validade)) {
+            this.validade = validade;
+        } else {
+            System.out.println("Data de validade inválida");
+        }
     }
 
     public String getName() {
@@ -54,5 +62,4 @@ public class Vacine {
     public void setNomeEmpresa(String nomeEmpresa) {
         this.nomeEmpresa = nomeEmpresa;
     }
-    
 }
