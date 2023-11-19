@@ -30,8 +30,12 @@ public class Main {
 
                 System.out.println(
                                 "|--------------------------------------------------Bem-vindo(a)--------------------------------------------------|");
+                
+                System.out.println("Curso: " + curso.getNome() + ", Código: " + curso.getCodigo());
+                System.out.println("            ");
+                
                 System.out.println("Aluno: " + aluno.getNome() + ", Matrícula: " + aluno.getMatricula() + ", Curso: "
-                                + aluno.getCurso().getNome());
+                               + aluno.getCurso().getNome());
 
                 System.out.println("            ");
                 System.out.println("Professor: " + professor.getNome() + ", Titulação: " + professor.getTitulacao()
@@ -57,5 +61,6 @@ public class Main {
                         System.out.println("Aluno -> " + alunos.getNome());
                 }
 
+                System.out.println("|----------------------------------------------------------------------------------------------------------------|");
         }
 }
