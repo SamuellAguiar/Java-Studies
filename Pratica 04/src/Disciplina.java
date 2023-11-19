@@ -39,6 +39,7 @@ public class Disciplina {
     }
 
     public void add(Aluno aluno) {
+        alunos.add(aluno);
     }
 
     public List<Aluno> getAlunos() {

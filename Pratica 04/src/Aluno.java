@@ -45,7 +45,7 @@ public class Aluno {
     }
 
     public void setTelefone(String telefone) {
-       this.telefone = telefone;
+        this.telefone = telefone;
     }
 
     public void setMatricula(String matricula) {
