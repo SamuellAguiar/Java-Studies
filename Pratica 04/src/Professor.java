@@ -1,4 +1,3 @@
-
 public class Professor extends Funcionario {
     private String titulacao;
     private String areaPesquisa;

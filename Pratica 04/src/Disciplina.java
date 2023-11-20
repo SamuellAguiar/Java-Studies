@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
 public class Disciplina {
     private int codigo;
     private String nome;
