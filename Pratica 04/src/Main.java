@@ -15,8 +15,8 @@ public class Main {
                                 curso);
                 disciplina.add(aluno);
 
-                Aluno aluno2 = new Aluno("Gustavo Rolim", "Rua Luiz Ferreira, 63", "31982089884", "15086106656",
-                                "2128025",
+                Aluno aluno2 = new Aluno("Gustavo Rolim", "Rua Sanitária, 68", "31982945671", "12345678910",
+                                "2128031",
                                 curso);
                 disciplina.add(aluno2);
 
@@ -51,10 +51,10 @@ public class Main {
                                 + aluno2.getCurso().getNome());
 
                 System.out.println("            ");
-                System.out.println("Lista de Alunos nas disciplinas:");
+                System.out.println("1) Lista de Alunos nas disciplinas:");
 
                 System.out.println("            ");
-                System.out.println("Disciplina: " + disciplina.getNome());
+                System.out.println("-> Disciplina: " + disciplina.getNome());
 
                 System.out.println("            ");
                 for (Aluno alunos : disciplina.getAlunos()) {
