@@ -13,6 +13,5 @@ public class App {
         agenda.listarContatos();
         agenda.listarAmigos();
         agenda.listarConhecidos();
-        System.out.println("=======================================");
-    }
+        }
 }
