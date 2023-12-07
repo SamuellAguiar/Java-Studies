@@ -22,4 +22,9 @@ public class Contato {
     public void setIdade(String idade) {
         this.idade = idade;
     }
+
+    @Override
+    public String toString(){
+        return null;
+    }
 }
