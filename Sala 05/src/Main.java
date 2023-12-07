@@ -1,3 +1,8 @@
+/*
+ * Grupo:
+ * Samuell Carlos de Oliveira Aguiar - 21.2.8025
+ * Gustavo Gomes Rolim - 21.2.8031
+ */
 import java.time.LocalDate;
 
 public class Main {
