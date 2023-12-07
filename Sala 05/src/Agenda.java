@@ -34,7 +34,7 @@ public class Agenda {
     public void listarAmigos() {
         for (int i = 0; i < contatos.length; i++) {
             if (contatos[i] instanceof Amigo) {
-                System.out.println(contatos[i].getIdade() + " " + contatos[i].getNome() + " " + ((Amigo) contatos[i]).getAniversario());
+                System.out.println("Idade: " + contatos[i].getIdade() + "\nNome:" + contatos[i].getNome() + "\nAniversário:" + ((Amigo) contatos[i]).getAniversario() + "\n");
             }
         }
     }
@@ -42,7 +42,7 @@ public class Agenda {
     public void listarConhecidos() {
         for (int i = 0; i < contatos.length; i++) {
             if (contatos[i] instanceof Conhecido) {
-                System.out.println(contatos[i].getIdade() + " " + contatos[i].getNome() + " " + ((Conhecido) contatos[i]).getEmail());
+                System.out.println("Idade: " + contatos[i].getIdade() + "\nNome: " + contatos[i].getNome() + "\nE-mail: " + ((Conhecido) contatos[i]).getEmail() + "\n");
             }
         }
     }

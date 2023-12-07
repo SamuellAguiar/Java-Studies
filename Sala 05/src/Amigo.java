@@ -18,4 +18,9 @@ public class Amigo extends Contato{
     public void setAniversario(LocalDate aniversario) {
         this.aniversario = aniversario;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Nome: " + super.getNome() + "Idade" + super.getIdade() + super.toString() + "Aniversário: " + aniversario + "\n";
+    }
 }
