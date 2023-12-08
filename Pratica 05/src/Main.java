@@ -10,11 +10,17 @@ public class Main {
 
         Agenda agenda = new Agenda(10);
         
-        agenda.adicionarContato(new Amigo("João", "20", LocalDate.of(2000, 10, 10)));
-        agenda.adicionarContato(new Amigo("Maria", "20", LocalDate.of(2000, 10, 10)));
-        agenda.adicionarContato(new Conhecido("José", "20", "samuellcarlos@gmail.com"));
-        agenda.adicionarContato(new Conhecido("Ana", "20", "carlo@gmail.com"));
+        Amigo amigo1 = new Amigo("Grolim", "Rua Sanitária", LocalDate.of(2000, 10, 10));
+        Amigo amigo2 = new Amigo("Bielzin Du Mel", "Rua Dionísio", LocalDate.of(2000, 10, 10));
+        Conhecido conhecido1 = new Conhecido("Samuell", "Rua Luiz Ferreira", "samuellcarlos@gmail.com");
+        Conhecido conhecido2 = new Conhecido("Carlos", "Rua Cesário", "carlo@gmail.com");
+        
+        agenda.adicionarContato(amigo1);
+        agenda.adicionarContato(amigo2);
+        agenda.adicionarContato(conhecido1);
+        agenda.adicionarContato(conhecido2);
             
+        agenda.listarContatos();
         agenda.listarAmigos();
         agenda.listarConhecidos();
         }
