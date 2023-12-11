@@ -20,7 +20,6 @@ public class Main {
         agenda.adicionarContato(conhecido1);
         agenda.adicionarContato(conhecido2);
             
-        agenda.listarContatos();
         agenda.listarAmigos();
         agenda.listarConhecidos();
         }
