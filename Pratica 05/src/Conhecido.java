@@ -20,6 +20,10 @@ public class Conhecido extends Contato {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return super.toString() + "Nome: " + super.getNome() + "Idade: " + super.getEndereco() + "Email: " + email + "\n";
+=======
+        return "Nome: " + getNome() + "Endereço: " + getEndereco()  + "Email: " + email + "\n";
+>>>>>>> ef6018968b88a4a771fd31006dde6712e69b1e76
     }
 }

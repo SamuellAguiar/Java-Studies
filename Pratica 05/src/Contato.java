@@ -11,14 +11,24 @@ public class Contato {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+<<<<<<< HEAD
+=======
     public String getEndereco() {
         return endereco;
     }
 
+>>>>>>> ef6018968b88a4a771fd31006dde6712e69b1e76
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+<<<<<<< HEAD
+    public String getEndereco() {
+        return endereco;
+    }
+
+=======
+>>>>>>> ef6018968b88a4a771fd31006dde6712e69b1e76
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
