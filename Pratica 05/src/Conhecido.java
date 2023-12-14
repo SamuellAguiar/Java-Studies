@@ -1,8 +1,8 @@
 public class Conhecido extends Contato {
     private String email;
 
-    public Conhecido(String nome, String idade, String email) {
-        super(nome, idade);
+    public Conhecido(String nome, String endereco, String email) {
+        super(nome, endereco);
         this.email = email;
     }
 
@@ -20,6 +20,6 @@ public class Conhecido extends Contato {
 
     @Override
     public String toString() {
-        return super.toString() + "Nome: " + super.getNome() + "Idade" + super.getIdade() + super.toString() + "Email: " + email + "\n";
+        return super.toString() + "Nome: " + super.getNome() + "Idade: " + super.getEndereco() + "Email: " + email + "\n";
     }
 }

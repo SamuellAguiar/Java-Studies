@@ -26,7 +26,7 @@ public class Agenda {
     public void listarContatos() {
         for (int i = 0; i < contatos.length; i++) {
             if (contatos[i] != null) {
-                System.out.println(contatos[i].getIdade() + " " + contatos[i].getNome());
+                System.out.println(contatos[i].getEndereco() + " " + contatos[i].getNome());
             }
         }
     }
@@ -34,7 +34,7 @@ public class Agenda {
     public void listarAmigos() {
         for (int i = 0; i < contatos.length; i++) {
             if (contatos[i] instanceof Amigo) {
-                System.out.println("Idade: " + contatos[i].getIdade() + "\nNome:" + contatos[i].getNome() + "\nAniversário:" + ((Amigo) contatos[i]).getAniversario() + "\n");
+                System.out.println("Endereço: " + contatos[i].getEndereco() + "\nNome:" + contatos[i].getNome() + "\nAniversário:" + ((Amigo) contatos[i]).getAniversario() + "\n");
             }
         }
     }
@@ -42,7 +42,7 @@ public class Agenda {
     public void listarConhecidos() {
         for (int i = 0; i < contatos.length; i++) {
             if (contatos[i] instanceof Conhecido) {
-                System.out.println("Idade: " + contatos[i].getIdade() + "\nNome: " + contatos[i].getNome() + "\nE-mail: " + ((Conhecido) contatos[i]).getEmail() + "\n");
+                System.out.println("Endereço: " + contatos[i].getEndereco() + "\nNome: " + contatos[i].getNome() + "\nE-mail: " + ((Conhecido) contatos[i]).getEmail() + "\n");
             }
         }
     }
