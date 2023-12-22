@@ -10,11 +10,11 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        ArrayList<String> palavras = new ArrayList<String>();
+        ArrayList<String> palavras = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite uma palavra: " + " " + "Digite fim para parar");
+        System.out.println("Digite fim para parar!" + "\n" + "Digite uma palavra: ");
 
         while (true) {
             String palavra = sc.nextLine();
@@ -26,6 +26,7 @@ public class App {
             palavras.add(palavra);    
         }
 
+        System.out.println("\n");
         System.out.println("Palavras digitadas: " + palavras.size());
 
         for (String palavra : palavras) {
