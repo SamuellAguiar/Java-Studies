@@ -1,9 +1,3 @@
-/*
- * Grupo:
- * Samuell Carlos de Oliveira Aguiar - 21.2.8025
- * Gustavo Gomes Rolim - 21.2.8031
- */
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
