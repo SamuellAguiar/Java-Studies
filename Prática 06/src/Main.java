@@ -1,3 +1,8 @@
+/*
+ * Grupo:
+ * Samuell Carlos de Oliveira Aguiar - 21.2.8025
+ * Gustavo Gomes Rolim - 21.2.8031
+ */
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,23 +32,24 @@ public class Main {
             System.out.println(empregado.getNome() + " -> " + empregado.getSalario());
         }
 
-        Empregado maiorSalario = Collections.max(empregados, Comparator.comparing(Empregado::getSalario));
-
-        Empregado menorSalario = Collections.min(empregados, Comparator.comparing(Empregado::getSalario));
-
         System.out.println(" ");
         System.out.println("Questão ii: \n");
-        System.out
-                .println("Empregado com maior salário: " + maiorSalario.getNome() + " -> " + maiorSalario.getSalario());
 
-        System.out
-                .println("Empregado com menor salário: " + menorSalario.getNome() + " -> " + menorSalario.getSalario());
+        Empregado maiorSalario = empregados.get(empregados.size() - 1);
+
+        System.out.println("Maior salário: " + maiorSalario.getNome() + " -> " + maiorSalario.getSalario());
+
+        Empregado menorSalario = empregados.get(0);
+
+        System.out.println("Menor salário: " + menorSalario.getNome() + " -> " + menorSalario.getSalario());
 
         System.out.println(" ");
         System.out.println("Questão iii: \n");
-        Empregado maisAntigo = Collections.min(empregados, Comparator.comparing(Empregado::getDataContratacao));
+        Collections.sort(empregados, Comparator.comparing(Empregado::getDataContratacao));
 
-        Empregado maisNovo = Collections.max(empregados, Comparator.comparing(Empregado::getDataContratacao));
+        Empregado maisAntigo = empregados.get(0);
+
+        Empregado maisNovo = empregados.get(empregados.size() - 1);
 
         System.out.println("Empregado mais antigo: " + maisAntigo.getNome() + " -> " + maisAntigo.getDataContratacao());
 
@@ -53,14 +59,16 @@ public class Main {
         System.out.println("Questão iv: \n");
 
         try {
-            System.out.println("Insira quantos indices deseja inserir: ");
+            System.out.println("Insira quantos indices deseja inserir: (0-5)");
             int num = sc.nextInt();
             for (int i = 0; i < num; i++) {
                 System.out.println("Insira o Indice do Empregado desejado:(Lembre-se, sempre começa do 0'Zero')");
                 int index = sc.nextInt();
                 Empregado empregado = empregados.get(index);
 
-                System.out.println("Empregado escolhido: " + empregado.getNome() + " -> " + empregado.getID());
+                System.out.println(
+                        "Empregado escolhido: " + empregado.getNome() + " \nID: " + empregado.getID() + " \nSalário: "
+                                + empregado.getSalario() + " \nData de contratação: " + empregado.getDataContratacao());
             }
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Indice inválido!");

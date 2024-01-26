@@ -48,12 +48,22 @@ public class Empregado implements Comparable<Empregado> {
     }
 
     public void setDataContratacao(LocalDate dataContratacao) {
-        this.dataContratacao = dataContratacao;
+        if(dataContratacao.isAfter(LocalDate.now())){
+            throw new IllegalArgumentException("Data de contratação inválida");
+        }
+        else{
+            this.dataContratacao = dataContratacao;
+        }
     }
-    
+
     @Override
     public int compareTo(Empregado outroEmpregado) {
-        return Integer.compare(this.ID, outroEmpregado.ID);
+        if (this.salario > outroEmpregado.salario) {
+            return +1;
+        }
+        if (this.salario < outroEmpregado.salario) {
+            return -1;
+        }
+        return 0;
     }
-     
 }
