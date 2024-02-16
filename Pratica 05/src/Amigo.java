@@ -22,6 +22,5 @@ public class Amigo extends Contato{
     @Override
     public String toString() {
         return "Nome: " + getNome() + "Endereço: " + getEndereco() +  "Aniversário: " + aniversario + "\n";
-
     }
 }
