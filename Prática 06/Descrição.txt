@@ -1,0 +1,20 @@
+A prática pode ser individual ou em dupla. 
+No caso da atividade ser realizada em dupla, somente um dos alunos deve postar 
+o arquivo no Moodle, com os nomes dos alunos em um arquivo texto que acompanha o diagrama 
+ou como comentário no arquivo enviado.
+
+No sistema de uma empresa, cada empregado possui um ID, nome, salário e data 
+em que ele foi contratado. 
+Escreva a classe Empregado que deve implementar a interface java.lang.Comparable. 
+Escreva também uma classe de teste com a main(...) que deve conter um ArrayList de empregados 
+e implementar as funcionalidades, na ordem abaixo:
+
+i) ordenar (ordem crescente) os funcionários pelo salário, 
+utilizando obrigatoriamente o método Collections.sort(...).
+
+ii) exibir qual funcionário possui o maior salário e qual possui o menor.
+
+iii) exibir o funcionário mais experiente (mais antigo) e o menos experiente.
+
+iv) Exibir as informações de um empregado de acordo com o índice fornecido pelo usuário 
+(tratar as exceções unchecked)
