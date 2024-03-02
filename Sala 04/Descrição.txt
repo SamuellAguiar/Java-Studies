@@ -1,0 +1,2 @@
+Escreva uma classe Java para representar uma Vacina. Defina os atributos e pelo menos
+um construtor que instancia o objeto com atributos obrigatórios válidos.
