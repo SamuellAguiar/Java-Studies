@@ -1,0 +1,2 @@
+Escreva um programa em Java que leia um vetor de 10 números inteiros 
+e depois escreva os valores lidos na ordem inversa da entrada.
