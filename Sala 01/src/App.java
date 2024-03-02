@@ -1,7 +1,3 @@
-/*Escreva um programa para ler números inteiros de 0 a 100. 
-A leitura deve ser encerrada ao ler um número inválido( < 0 ou > 100).
-Qual é o maior e o menor?*/
-
 import java.util.Scanner;
 
 public class App {
