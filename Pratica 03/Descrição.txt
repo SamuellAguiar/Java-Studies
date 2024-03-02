@@ -1,0 +1,2 @@
+Defina todas as classes identificadas na Prática 02 com seus atributos e na classe Main, 
+instancie um objeto aluno com os seus dados.
