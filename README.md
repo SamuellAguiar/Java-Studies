@@ -13,9 +13,6 @@
   <li>Execução:</li>
   <br/>
       <p>Para executar o programa, navegue pelos arquivos na pasta src/.</p>
-      <p>Este arquivo é o ponto de entrada do projeto e contém toda a lógica necessária para processar a imagem e aplicar o algoritmo de busca em largura.</p>
-</ul>
-
 <hr/>
 
 <h4>Licença</h4>
