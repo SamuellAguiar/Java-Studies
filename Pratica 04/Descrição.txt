@@ -1,0 +1,3 @@
+Implemente nas classes da prática 02 as associações necessárias e uma classe Main 
+com a função/método main, que implementa a leitura de dados de pelo menos 
+02 alunos matriculados na mesma disciplina e exibe os dados na tela. 
