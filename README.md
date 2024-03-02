@@ -16,7 +16,7 @@
 <hr/>
 
 <h4>Licença</h4>
-<p>
+<p align-items = "left">
   Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 </p>
 
