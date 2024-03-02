@@ -1,0 +1,7 @@
+Escreva uma classe de teste que contém o método main. 
+No método main(...) instancie um ArrayList de String e solicite ao usuário informar Strings 
+para o ArrayList, lidas a partir do teclado. 
+Você deve escolher uma String "secreta" para finalizar a entrada de dados. 
+Após, percorra a lista imprimindo o valor de cada String. 
+Por fim, ordene os objetos contidos na lista em ordem crescente. 
+Percorra a lista novamente imprimindo o valor de cada String, agora em ordem.
